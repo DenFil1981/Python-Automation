@@ -5,7 +5,7 @@ from configuration import *
 from time import sleep
 
 def test_data_types_form(chrome_browser):
-    chrome_browser.get("https://bonigarcia.dev/selenium-webdriver-java/data-type")
+    chrome_browser.get(URL_1)
     form_data = {
     "first-name": first_name,
     "last-name": last_name,
@@ -41,5 +41,5 @@ def test_data_types_form(chrome_browser):
     
     for field_name, class_name in field_classes.items():
         assert class_name in chrome_browser.find_element(
-            By.ID, field_id).get_Attribute("class")
+            By.ID, field_name).get_attribute("class")
   

@@ -29,7 +29,7 @@ class ShopmainPage:
         self.browser.find_element(*self.Sauce_Labs_Onesie).click()
         
     def into_container(self):
-        self.Container = (BY.ID, "shopping_cart_container") 
+        self.Container = (By.ID, "shopping_cart_container") 
         self.browser.find_element(*self.Container).click()         
             
            

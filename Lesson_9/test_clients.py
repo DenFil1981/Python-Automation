@@ -1,6 +1,6 @@
 import pytest
-from Lesson_9.Employee import Employer
-from Lesson_9.DataBase import DataBase
+from Employee import Employer
+from DataBase import DataBase
 
 api = ("https://x-clients-be.onrender.com")
 db = DataBase(

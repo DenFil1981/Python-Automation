@@ -36,7 +36,7 @@ class Database:
     def delete(self, company_id: int):
         try:
             with self.db.connect() as connection:
-                connection.execute(self.query['delte_company'], parameters=dict(company_id=company_id))
+                connection.execute(self.query['delete_company'], parameters=dict(company_id=company_id))
                 connection.commit()
         except Exception as _ex:
             print("[INFO] Error - can't work with SQL", _ex) 

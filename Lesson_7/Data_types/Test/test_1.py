@@ -2,6 +2,7 @@ from Lesson_7.Data_types.Pages.Mainpage import MainPage
 from Lesson_7.Data_types.Pages.Datafildes import DataFild
 
 
+
 def test_assertion(chrome_browser):
     main_page = MainPage(chrome_browser)
     main_page.find_fields()
